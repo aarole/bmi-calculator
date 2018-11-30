@@ -39,6 +39,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.chkShow = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblUserName
@@ -88,10 +89,11 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(32, 112);
+            this.btnLogin.Location = new System.Drawing.Point(32, 120);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 8;
@@ -101,7 +103,7 @@
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Location = new System.Drawing.Point(118, 112);
+            this.btnSignUp.Location = new System.Drawing.Point(118, 120);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(75, 23);
             this.btnSignUp.TabIndex = 9;
@@ -111,7 +113,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(74, 141);
+            this.btnExit.Location = new System.Drawing.Point(74, 149);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 10;
@@ -141,12 +143,24 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "*";
             // 
+            // chkShow
+            // 
+            this.chkShow.AutoSize = true;
+            this.chkShow.Location = new System.Drawing.Point(69, 97);
+            this.chkShow.Name = "chkShow";
+            this.chkShow.Size = new System.Drawing.Size(102, 17);
+            this.chkShow.TabIndex = 12;
+            this.chkShow.Text = "Show Password";
+            this.chkShow.UseVisualStyleBackColor = true;
+            this.chkShow.CheckedChanged += new System.EventHandler(this.chkShow_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(235, 184);
+            this.Controls.Add(this.chkShow);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
@@ -158,9 +172,10 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login-FinalProject By Team19";
-            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +194,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkShow;
     }
 }
 

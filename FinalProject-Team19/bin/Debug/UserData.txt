@@ -1,2 +1,3 @@
-Aditya	Arole	1.83	101	18 - 40	0.00	
-Resul	Ucar	1.72712603882995	102.040816326531	41 - 65	0.00	
+Aditya	Arole	1.83	101	18 - 40	30.16	Overweight
+Resul	Ucar	1.72712603882995	102.040816326531	41 - 65	34.21	Overweight
+Aditya	Arole	1.83	101	18 - 40	30.16	Overweight

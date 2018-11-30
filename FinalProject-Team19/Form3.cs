@@ -359,19 +359,11 @@ namespace FinalProject_Team19
                 }
             }
 
-            if (flag1 == true)
+            if (flag1 == true || flag2 == true)
             {
-                lstOut.Items.Add("Discovered First Name: " + mFirst[ctr]);
-                lstOut.Items.Add("First Name".PadRight(15) + "Last Name");
+                lstOut.Items.Add("First Name".PadRight(15) + "Last Name".PadRight(15) + "Height(m)".PadRight(15) + "Weight(kg)".PadRight(15) + "BMI(kg/m^2)");
                 lstOut.Items.Add("---------------------------------------------------------------------------");
-                lstOut.Items.Add(mFirst[ctr].PadRight(15) + mLast[ctr]);
-            }
-            else if (flag2 == true)
-            {
-                lstOut.Items.Add("Discovered Last Name: " + mLast[ctr]);
-                lstOut.Items.Add("First Name".PadRight(15) + "Last Name");
-                lstOut.Items.Add("---------------------------------------------------------------------------");
-                lstOut.Items.Add(mFirst[ctr].PadRight(15) + mLast[ctr]);
+                lstOut.Items.Add(mFirst[ctr].PadRight(15) + mLast[ctr].PadRight(15) + mHeight[ctr].ToString("N").PadRight(15) + mWeight[ctr].ToString("N").PadRight(15) + mBMI[ctr].ToString("N"));
             }
             else
             {
@@ -430,14 +422,14 @@ namespace FinalProject_Team19
             txtHeight2.Visible = false;
         }
 
-        private void cboAge_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void cboAge_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cboAge.SelectedIndex == 0 || cboAge.SelectedIndex == 3)
             {
                 DisplayMessage("BMI calculation is not ideal for your age");
                 return;
             }
-        }
+        }*/
 
         private void Form3_Load(object sender, EventArgs e)
         {
@@ -551,6 +543,8 @@ namespace FinalProject_Team19
             Form4 f4 = new Form4();
             f4.ShowDialog();
             this.Show();
+            txtFirst.Focus();
+            lstOut.Items.Clear();
         }
     }
 }

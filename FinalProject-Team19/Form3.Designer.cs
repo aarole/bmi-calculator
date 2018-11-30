@@ -90,7 +90,7 @@
             // lblHeight
             // 
             this.lblHeight.AutoSize = true;
-            this.lblHeight.Location = new System.Drawing.Point(287, 65);
+            this.lblHeight.Location = new System.Drawing.Point(387, 69);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(41, 13);
             this.lblHeight.TabIndex = 2;
@@ -99,7 +99,7 @@
             // lblWeight
             // 
             this.lblWeight.AutoSize = true;
-            this.lblWeight.Location = new System.Drawing.Point(287, 98);
+            this.lblWeight.Location = new System.Drawing.Point(384, 102);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(44, 13);
             this.lblWeight.TabIndex = 3;
@@ -143,12 +143,11 @@
             this.cboAge.Name = "cboAge";
             this.cboAge.Size = new System.Drawing.Size(121, 21);
             this.cboAge.TabIndex = 7;
-            this.cboAge.SelectedIndexChanged += new System.EventHandler(this.cboAge_SelectedIndexChanged);
             // 
             // txtHeight1
             // 
             this.txtHeight1.BackColor = System.Drawing.SystemColors.Window;
-            this.txtHeight1.Location = new System.Drawing.Point(334, 62);
+            this.txtHeight1.Location = new System.Drawing.Point(434, 66);
             this.txtHeight1.Name = "txtHeight1";
             this.txtHeight1.Size = new System.Drawing.Size(37, 20);
             this.txtHeight1.TabIndex = 8;
@@ -181,7 +180,7 @@
             // 
             this.grbHUnits.Controls.Add(this.radS);
             this.grbHUnits.Controls.Add(this.radM);
-            this.grbHUnits.Location = new System.Drawing.Point(439, 58);
+            this.grbHUnits.Location = new System.Drawing.Point(265, 53);
             this.grbHUnits.Name = "grbHUnits";
             this.grbHUnits.Size = new System.Drawing.Size(116, 66);
             this.grbHUnits.TabIndex = 13;
@@ -191,9 +190,9 @@
             // txtWeight
             // 
             this.txtWeight.BackColor = System.Drawing.SystemColors.Window;
-            this.txtWeight.Location = new System.Drawing.Point(334, 95);
+            this.txtWeight.Location = new System.Drawing.Point(434, 99);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(100, 20);
+            this.txtWeight.Size = new System.Drawing.Size(88, 20);
             this.txtWeight.TabIndex = 14;
             // 
             // btnEnter
@@ -351,14 +350,14 @@
             // lblHeight1
             // 
             this.lblHeight1.AutoSize = true;
-            this.lblHeight1.Location = new System.Drawing.Point(344, 46);
+            this.lblHeight1.Location = new System.Drawing.Point(477, 69);
             this.lblHeight1.Name = "lblHeight1";
             this.lblHeight1.Size = new System.Drawing.Size(0, 13);
             this.lblHeight1.TabIndex = 33;
             // 
             // txtHeight2
             // 
-            this.txtHeight2.Location = new System.Drawing.Point(377, 62);
+            this.txtHeight2.Location = new System.Drawing.Point(489, 66);
             this.txtHeight2.Name = "txtHeight2";
             this.txtHeight2.Size = new System.Drawing.Size(33, 20);
             this.txtHeight2.TabIndex = 34;
@@ -367,7 +366,7 @@
             // lblIN
             // 
             this.lblIN.AutoSize = true;
-            this.lblIN.Location = new System.Drawing.Point(386, 46);
+            this.lblIN.Location = new System.Drawing.Point(528, 69);
             this.lblIN.Name = "lblIN";
             this.lblIN.Size = new System.Drawing.Size(15, 13);
             this.lblIN.TabIndex = 35;
@@ -377,7 +376,7 @@
             // lblW1
             // 
             this.lblW1.AutoSize = true;
-            this.lblW1.Location = new System.Drawing.Point(440, 98);
+            this.lblW1.Location = new System.Drawing.Point(528, 103);
             this.lblW1.Name = "lblW1";
             this.lblW1.Size = new System.Drawing.Size(0, 13);
             this.lblW1.TabIndex = 36;
@@ -396,7 +395,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(389, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(371, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 109);
             this.pictureBox1.TabIndex = 38;
@@ -434,8 +433,10 @@
             this.Controls.Add(this.lblFirst);
             this.Controls.Add(this.grbHUnits);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form3";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BMI Calculator-FinalProject By Team19";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
             this.Load += new System.EventHandler(this.Form3_Load);

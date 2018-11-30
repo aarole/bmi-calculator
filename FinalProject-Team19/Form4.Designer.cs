@@ -198,7 +198,9 @@
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Height & Weight Conversion - FinalProject By Team19";
             this.grbType.ResumeLayout(false);
             this.grbType.PerformLayout();

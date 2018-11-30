@@ -130,6 +130,18 @@ namespace FinalProject_Team19
             Close();
         }
 
+        private void chkShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if(chkShow.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            if(chkShow.Checked == false)
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+        }
+
         /*private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             

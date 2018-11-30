@@ -120,14 +120,27 @@ namespace FinalProject_Team19
                 DisplayMessage("Please check your credentials.");
                 return;
             }
-            this.Hide();
+            
             Form3 f3 = new Form3();
             f3.ShowDialog();
+            this.Close();
         }
-
+        
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void chkShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShow.Checked == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            if (chkShow.Checked == false)
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
         }
 
         /*private void Form1_Load(object sender, EventArgs e)
